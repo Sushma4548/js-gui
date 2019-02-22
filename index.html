@@ -23,11 +23,11 @@
      </p>
 
     <p>Enter first String:
-      <input id="firststring" type="str1" value="sushma rani">
+      <input id="firststring" type="text" value="sushma rani">
     </p>
 
     <p>Enter second string:
-      <input id="secondstring" type="str2" value="reddy">
+      <input id="secondstring" type="text" value="reddy">
     </p>
 
     <button id="clicker" class="btn btn-primary">Click me!</button>
@@ -41,22 +41,25 @@
 
     console.log('Declare testable functions.....................')
 
-    function Math.max(str1.length, str2.length)
- {
-      return  str1.length
+    function Math.max(firstString, secondString)
+ {    
+    if(firstString.length<=secondString.length)
+      return secondString
+      else 
+      return firstString
     }
-    console.log('string=' +maxStringLength)
+    console.log('string=' +Math.max(firstString,secondString))
 
     console.log('Declare event listeners .......................')
 
     document.getElementById('clicker').addEventListener('click', function () {
-      const s = document.getElementById('maxStringLength').value
+      //const s = document.getElementById('string').value
       const i = parseInt(document.getElementById('firstString').value)
       console.log('i=' + i)
       const j = parseInt(document.getElementById('secondString').value)
       console.log('j=' + j)
-      const result = s + ', your string is ' + maxStringLength(i, j) + '.'
-      document.getElementById('maxStringLength').innerHTML = result
+      const ans =  ' your string is ' + Mat(i, j) + '.'
+      document.getElementById('result').innerHTML = ans
     })
 
     console.log('SCRIPT END')
