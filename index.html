@@ -47,9 +47,9 @@
 
     document.getElementById('clicker').addEventListener('click', function () {
       //const s = document.getElementById('string').value
-      const i = document.getElementById('firststring').value;
+      const i = parseInt(document.getElementById('firststring').value);
       console.log('i=' + i);
-      const j = document.getElementById('secondstring').value;
+      const j = parseInt(document.getElementById('secondstring').value);
       console.log('j=' + j);
        console.log('string=' +Math.max(i,j));
       const ans =  ' your string is ' + Math.max(i, j) + '.';
