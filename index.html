@@ -41,7 +41,7 @@
 
     console.log('Declare testable functions.....................');
 
-    console.log('string=' +Math.max(firstString,secondString));
+   
 
     console.log('Declare event listeners .......................');
 
@@ -51,6 +51,7 @@
       console.log('i=' + i);
       const j = document.getElementById('secondString').value;
       console.log('j=' + j);
+       console.log('string=' +Math.max(i,j));
       const ans =  ' your string is ' + Math.max(i, j) + '.';
       document.getElementById('result').innerHTML = ans;
     });
