@@ -37,32 +37,25 @@
   </main>
 
   <script>
-    console.log('SCRIPT START')
+    console.log('SCRIPT START');
 
-    console.log('Declare testable functions.....................')
+    console.log('Declare testable functions.....................');
 
-    function Math.max(firstString, secondString)
- {    
-    if(firstString.length<=secondString.length)
-      return secondString
-      else 
-      return firstString
-    }
-    console.log('string=' +Math.max(firstString,secondString))
+    console.log('string=' +Math.max(firstString,secondString));
 
-    console.log('Declare event listeners .......................')
+    console.log('Declare event listeners .......................');
 
     document.getElementById('clicker').addEventListener('click', function () {
       //const s = document.getElementById('string').value
-      const i = parseInt(document.getElementById('firstString').value)
-      console.log('i=' + i)
-      const j = parseInt(document.getElementById('secondString').value)
-      console.log('j=' + j)
-      const ans =  ' your string is ' + Mat(i, j) + '.'
-      document.getElementById('result').innerHTML = ans
-    })
+      const i = document.getElementById('firstString').value;
+      console.log('i=' + i);
+      const j = document.getElementById('secondString').value;
+      console.log('j=' + j);
+      const ans =  ' your string is ' + Math.max(i, j) + '.';
+      document.getElementById('result').innerHTML = ans;
+    });
 
-    console.log('SCRIPT END')
+    console.log('SCRIPT END');
   </script>
 
   <!-- JQuery -->
