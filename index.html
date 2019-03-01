@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>String Comparer</title>
+  <title>Temperature Converter</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -15,20 +15,18 @@
 <body>
   <main class="container-fluid">
 
-    <h2>Given 2 text strings from the user, display the longest length</h2>
+    <h2>Given temp in K, display temp in C</h2>
     
 
-     <p>Enter your name:
-      <input id="aleti" type="name" value="sushma reddy">
+     <p>Enter the value:
+      <input id="19" type="number" value="degK">
      </p>
 
-    <p>Enter first String:
-      <input id="firststring" type="text" value="">
-    </p>
+   
 
-    <p>Enter second string:
+    <!-- <p>Enter second string:
       <input id="secondstring" type="text" value="">
-    </p>
+    </p> -->
 
     <button id="clicker" class="btn btn-primary" onclick="">Click me!</button>
 
@@ -47,12 +45,12 @@
 
     document.getElementById('clicker').addEventListener('click', function () {
       //const s = document.getElementById('string').value
-      const i = parseInt(document.getElementById('firststring').value);
+      const i =parseInt(document.getElementById('19').value);
       console.log('i=' + i);
-      const j = parseInt(document.getElementById('secondstring').value);
-      console.log('j=' + j);
-       console.log('string=' +Math.max(i,j));
-      const ans =  ' maximum number is ' + Math.max(i, j) + '.';
+      // const j = parseInt(document.getElementById('secondstring').value);
+      // console.log('j=' + j);
+      //  console.log('string=' +Math.max(i,j));
+      const ans =  'the temperature is ' +(i + 273.15);
       document.getElementById('result').innerHTML = ans;
     });
 
